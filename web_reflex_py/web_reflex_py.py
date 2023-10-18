@@ -6,12 +6,12 @@ from web_reflex_py.state import State
 def qa(question: str, answer: str) -> rx.Component:
     return rx.box(
         rx.box(
-            rx.text(question, style=style.question_style), 
-            text_align="right"
+            rx.text(question, text_align="right"), 
+            style=style.question_style
         ),
         rx.box(
-            rx.text(answer, style=style.answer_style), 
-            text_align="left"
+            rx.text(answer, text_align="left"), 
+            style=style.answer_style
         ),
         margin_y="1em",
     )
