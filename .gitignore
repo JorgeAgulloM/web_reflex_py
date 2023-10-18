@@ -1,11 +1,13 @@
+# Enviroment
+
 *.db
 
 *.py[cod]
+
+.env
 
 .web
 
 __pycache__/
 
-# Enviroment
 env/
-.env
