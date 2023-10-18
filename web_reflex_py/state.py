@@ -1,10 +1,11 @@
 # state.py
 import reflex as rx
-import asyncio
+import os
 import openai
-from openai_env import API_KEY
 
-openai.api_key = os.environ[API_KEY]
+from env_openai.keys import API_KEY #path local
+
+openai.api_key = API_KEY #os.environ["API_KEY"]
 
 
 class State(rx.State):
