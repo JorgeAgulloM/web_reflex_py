@@ -6,11 +6,11 @@ from web_reflex_py.state import State
 def qa(question: str, answer: str) -> rx.Component:
     return rx.box(
         rx.box(
-            rx.text(question, text_align="right"), 
+            rx.text(question, text_align="right", color="black"), 
             style=style.question_style
         ),
         rx.box(
-            rx.text(answer, text_align="left"), 
+            rx.text(answer, text_align="left", color="black"), 
             style=style.answer_style
         ),
         margin_y="1em",
@@ -32,12 +32,13 @@ def action_bar() -> rx.Component:
             value=State.question,
             placeholder="Ask a question",
             on_change=State.set_question, 
-            style=style.input_style
+            style=style.input_style,
         ),
         rx.button(
             "Ask",
             on_click=State.answer, 
-            style=style.button_style
+            style=style.button_style,
+            color="black",
         ),
     )
 
