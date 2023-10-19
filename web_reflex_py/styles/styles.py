@@ -27,6 +27,12 @@ BASE_STYLES = {
     }
 }
 
+title_style = dict(
+    size="md",
+    width="100%",
+    padding_top=Size.DEFAULT.value
+)
+
 button_title_style = dict(
     font_size=Size.DEFAULT.value
 )
