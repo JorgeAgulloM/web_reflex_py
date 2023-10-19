@@ -1,6 +1,7 @@
 """Welcome to Reflex! This file outlines the steps to create a basic app."""
 import reflex as rx
 from web_reflex_py.components.nav_bar import nav_bar
+from web_reflex_py.views.header.header import header
 
 class State(rx.State):
     """The app state."""
@@ -10,7 +11,8 @@ class State(rx.State):
 
 def index() -> rx.Component:
     return rx.vstack(
-        nav_bar() 
+        nav_bar(), 
+        header()
     )  
     
 
