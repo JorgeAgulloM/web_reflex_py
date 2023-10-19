@@ -3,6 +3,7 @@ import reflex as rx
 from web_reflex_py.components.nav_bar import nav_bar
 from web_reflex_py.views.header.header import header
 from web_reflex_py.views.links.links import links
+from web_reflex_py.components.footer import footer
 
 class State(rx.State):
     """The app state."""
@@ -14,7 +15,8 @@ def index() -> rx.Component:
     return rx.vstack(
         nav_bar(), 
         header(),
-        links()
+        links(),
+        footer()  
     )  
     
 
