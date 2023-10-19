@@ -1,7 +1,7 @@
 import reflex as rx
 import web_reflex_py.styles.styles as style 
 
-def link_buttun(title: str, body: str, url: str) -> rx.Component:
+def link_button(title: str, body: str, url: str) -> rx.Component:
     return rx.link(
         rx.button(
             rx.hstack(
@@ -16,8 +16,8 @@ def link_buttun(title: str, body: str, url: str) -> rx.Component:
                     align_items="start"
                 )
             ),
-            padding=style.Size.DEFAULT.value,
-            height='100px'
+            vertical_align="center",
+            height='60px'
         ),
         href=url,
         is_external=True,
