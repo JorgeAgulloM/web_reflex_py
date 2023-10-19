@@ -1,15 +1,16 @@
 import reflex as rx
+from web_reflex_py.styles.styles import Size
+
 
 def nav_bar() -> rx.Component:
     return rx.hstack(
         rx.text(
-            'SoftYorch',
-            height='40px',
-            color='white',
+            'SoftYorch'
         ),
         position='sticky',
-        bg='blue',
-        padding_x='8px',
-        padding_y='16px',
+        bg='lightgray',
+        padding_x=Size.DEFAULT.value,
+        padding_y=Size.SMALL.value,
         z_index='999',
+        top="0"
     )
