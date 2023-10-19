@@ -22,7 +22,8 @@ def header() -> rx.Component:
                 link_icon("https://github.com/JorgeAgulloM")
             ),
             align_items="start"
-        )
+        ),
+        spacing=Size.DEFAULT.value
     ),
     rx.flex(
         info_text("+2", "años de experiencia"),

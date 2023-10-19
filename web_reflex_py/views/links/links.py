@@ -1,6 +1,7 @@
 import reflex as rx
 from web_reflex_py.components.link_button import link_button
 from web_reflex_py.components.title import title
+from web_reflex_py.styles.styles import Size
 
 def links() -> rx.Component:
     return rx.vstack(
@@ -31,5 +32,6 @@ def links() -> rx.Component:
             'recargar pagina', 
             'http://localhost:3000/'
         ),
-        width="100%"
+        width="100%",
+        spacing=Size.MEDIUM.value
     )
