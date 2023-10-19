@@ -17,7 +17,7 @@ def link_button(title: str, body: str, url: str) -> rx.Component:
                 )
             ),
             vertical_align="center",
-            height='60px'
+            height="100%"
         ),
         href=url,
         is_external=True,
