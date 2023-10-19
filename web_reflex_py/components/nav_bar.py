@@ -4,7 +4,7 @@ def nav_bar() -> rx.Component:
     return rx.hstack(
         rx.text(
             'SoftYorch',
-            heigth='40px',
+            height='40px',
             color='white',
         ),
         position='sticky',

@@ -4,6 +4,8 @@ from web_reflex_py.components.nav_bar import nav_bar
 from web_reflex_py.views.header.header import header
 from web_reflex_py.views.links.links import links
 from web_reflex_py.components.footer import footer
+import web_reflex_py.styles.styles as style
+from web_reflex_py.styles.styles import Size
 
 class State(rx.State):
     """The app state."""
@@ -12,16 +14,27 @@ class State(rx.State):
 
 
 def index() -> rx.Component:
-    return rx.vstack(
-        nav_bar(), 
-        header(),
-        links(),
-        footer()  
-    )  
+    return rx.box(
+        nav_bar(),
+        rx.center(
+            rx.vstack(
+                header(),
+                links(),
+                max_width=style.MAX_WIDTH,
+                width="100%",
+                margin_y=Size.BIG.value,  
+            ),
+        ),
+        footer(),
+    )
+
+ 
     
 
 
 # Add state and page to the app.
-app = rx.App()
+app = rx.App(
+    style=style.BASE_STYLES
+)
 app.add_page(index)
 app.compile()
