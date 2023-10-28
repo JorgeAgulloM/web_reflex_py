@@ -1,6 +1,7 @@
 import reflex as rx
 import datetime as dt
 from web_reflex_py.styles.styles import Size
+from web_reflex_py.styles.colors import Color, TextColor
 
 def footer() -> rx.Component:
     year = dt.date.today().year
@@ -15,7 +16,9 @@ def footer() -> rx.Component:
         rx.text(
             'BUILDING SOFTWARE WITH ♥. FROM ELCHE TO THE WORLD!',
             font_size=Size.SMALL.value,
-            margin_top="0px !important"
+            margin_top=Size.ZERO.value
         ),
-        margin_bottom=Size.BIG.value
+        margin_bottom=Size.BIG.value,
+        padding_bottom=Size.BIG.value,
+        color=TextColor.FOOTER.value
     )
