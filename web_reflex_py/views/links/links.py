@@ -16,6 +16,7 @@ def links() -> rx.Component:
             'Para que pueda ojear mi perfil', 
             'https://www.linkedin.com/in/jorgeagullo/'
         ),
+        
         title("Cosas varias"),
         link_button(
             'Twitch', 
@@ -32,6 +33,14 @@ def links() -> rx.Component:
             'recargar pagina', 
             'http://localhost:3000/'
         ),
+        
+        title("Contacto"),
+        link_button(
+            'Email', 
+            'softyorch@gmail.com', 
+            'mailto:softyorch@gmail.com'
+        ),
+        
         width="100%",
         spacing=Size.MEDIUM.value
     )

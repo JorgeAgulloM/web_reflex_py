@@ -7,13 +7,16 @@ def link_button(title: str, body: str, url: str) -> rx.Component:
             rx.hstack(
                 rx.icon(
                     tag="arrow_forward",
-                    width=style.Size.DEFAULT.value,
-                    height=style.Size.DEFAULT.value
+                    width=style.Size.BIG.value,
+                    height=style.Size.BIG.value,
+                    margin=style.Size.MEDIUM.value
                 ),
                 rx.vstack(
                     rx.text(title, style=style.button_title_style),
                     rx.text(body, style=style.button_body_style),
-                    align_items="start"
+                    spacing=style.Size.SMALL.value,
+                    align_items="start",
+                    margin=style.Size.ZERO.value
                 )
             ),
             vertical_align="center",
