@@ -17,9 +17,10 @@ def sponsors() -> rx.Component:
                 "logo_python_es.png",
                 "https://es.python.org/"
             ),
-            spacing=Size.DEFAULT.value,
-            width="100%",
-            align_items="start"
-        )
+            spacing=Size.BIG.value
+        ),
+        width="100%",
+        align_items="start",
+        spacing=Size.MEDIUM.value
     )
     
