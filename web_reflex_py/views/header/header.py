@@ -3,13 +3,20 @@ from web_reflex_py.components.link_icon import link_icon
 from web_reflex_py.components.info_text import info_text
 from web_reflex_py.styles.styles import Size
 from web_reflex_py.styles.colors import TextColor
+from web_reflex_py.styles.colors import Color, TextColor
 
 def header() -> rx.Component:
  return rx.vstack(
     rx.hstack(
         rx.avatar(
             name='Jorge Agulló', 
-            size='xl'
+            size='xl',
+            src='avatar.jpg',
+            color=TextColor.BODY.value,
+            bg=Color.CONTENT.value,
+            padding="2px",
+            border='4px',
+            border_color=Color.PRIMARY.value
         ),
         rx.vstack(
             rx.heading(
@@ -31,7 +38,7 @@ def header() -> rx.Component:
         spacing=Size.DEFAULT.value
     ),
     rx.flex(
-        info_text("+2", "años de experiencia"),
+        info_text("+1", "año de experiencia"),
         rx.spacer(),
         info_text("Android", "Jetpack compose"),
         rx.spacer(),
@@ -43,6 +50,7 @@ def header() -> rx.Component:
         Python y Reflex. Emocionado por explorar un nueva 
         tecnología para crear webs y construir experiencias 
         digitales atractivas.""",
+        font_size=Size.DEFAULT.value,
         color=TextColor.BODY.value
     ),
     spacing=Size.BIG.value,
