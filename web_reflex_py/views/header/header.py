@@ -29,9 +29,19 @@ def header() -> rx.Component:
                 color=TextColor.HEADER.value
             ),
             rx.hstack(
-                link_icon("https://github.com/JorgeAgulloM"),
-                link_icon("https://github.com/JorgeAgulloM"),
-                link_icon("https://github.com/JorgeAgulloM")
+                link_icon(
+                    'icons/github.svg',
+                    'https://github.com/JorgeAgulloM'
+                ),
+                link_icon(
+                    'icons/linkedin.svg',
+                    'https://www.linkedin.com/in/jorgeagullo/'
+                ),
+                link_icon(
+                    'icons/envelope-regular.svg',
+                    'mailto:softyorch@gmail.com'
+                ),
+                spacing=Size.DEFAULT.value
             ),
             align_items="start"
         ),

@@ -8,12 +8,14 @@ def links() -> rx.Component:
         title("Personal"),
         link_button(
             'Github', 
-            'Con esto conocerás mi potencial', 
+            'Aquí conocerás mi potencial',
+            'icons/github.svg', 
             'https://github.com/JorgeAgulloM'
         ),
         link_button(
             'Linkedin', 
             'Para que pueda ojear mi perfil', 
+            'icons/linkedin.svg', 
             'https://www.linkedin.com/in/jorgeagullo/'
         ),
         
@@ -21,16 +23,19 @@ def links() -> rx.Component:
         link_button(
             'Twitch', 
             '¿Cuando toca Mouredev?', 
+            'icons/twitch.svg', 
             'https://www.twitch.tv/super_yorch'
         ),
         link_button(
             'Youtube', 
             'Los vídos de mis apps',
+            'icons/youtube.svg', 
             'https://www.youtube.com/channel/UCcox318Jjfm8H6Roesi3SZg'
         ),
         link_button(
             'Click Me!', 
             'recargar pagina', 
+            'icons/hand-point-up-regular.svg', 
             'http://localhost:3000/'
         ),
         
@@ -38,6 +43,7 @@ def links() -> rx.Component:
         link_button(
             'Email', 
             'softyorch@gmail.com', 
+            'icons/envelope-regular.svg', 
             'mailto:softyorch@gmail.com'
         ),
         

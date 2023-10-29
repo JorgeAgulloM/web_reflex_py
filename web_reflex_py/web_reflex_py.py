@@ -39,5 +39,10 @@ def index() -> rx.Component:
 app = rx.App(
     style=style.BASE_STYLES
 )
-app.add_page(index)
+app.add_page(
+    index,
+    title='SoftYorch | Aprendiendo desarrollo web con Python y Reflex',
+    description='Hola, mi nombre es Jorge y soy Desarrollador de Aplicaciones Multiplataforma.',
+    image="avatar.jpg"
+)
 app.compile()
