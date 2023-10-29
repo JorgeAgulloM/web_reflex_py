@@ -13,9 +13,8 @@ def header() -> rx.Component:
         ),
         rx.vstack(
             rx.heading(
-                'Jorge Agulló', 
-                size="lg",
-                color=TextColor.HEADER.value
+                'Jorge Agulló',
+                size='lg'
             ),
             rx.text(
                 '@Yorchdevelop',
